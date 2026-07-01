@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #030008;
+    color: #f3f4f6;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  body {
+    background: radial-gradient(circle at 50% 50%, #08051a 0%, #030008 100%);
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #030008;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1b1632;
+    border-radius: 4px;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a855f7;
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+  }
+}
+
+/* Glassmorphism Styles */
+.glass-panel {
+  background: rgba(10, 6, 22, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(168, 85, 247, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-panel:hover {
+  border-color: rgba(168, 85, 247, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(168, 85, 247, 0.1), 0 0 15px rgba(168, 85, 247, 0.1);
+}
+
+.glass-panel-glow {
+  background: rgba(10, 6, 22, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.15), inset 0 0 12px rgba(168, 85, 247, 0.05);
+}
+
+.glass-panel-glow:hover {
+  border-color: rgba(168, 85, 247, 0.6);
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.25), inset 0 0 15px rgba(168, 85, 247, 0.1);
+}
+
+/* Purple Glow Utility */
+.neon-glow-text {
+  text-shadow: 0 0 8px rgba(168, 85, 247, 0.6), 0 0 15px rgba(168, 85, 247, 0.3);
+}
+
+.neon-glow-border {
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.3), inset 0 0 10px rgba(168, 85, 247, 0.15);
+}
+
+.neon-glow-border-pink {
+  box-shadow: 0 0 15px rgba(217, 70, 239, 0.3), inset 0 0 10px rgba(217, 70, 239, 0.15);
+}
+
+/* Matrix Background Canvas */
+.matrix-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.15;
+}
+
+/* Section Headings Style with glow animation default class */
+.section-heading-glow {
+  @apply text-3xl md:text-4xl font-extrabold text-center tracking-wider mb-12 uppercase animate-pulse-glow;
+}
+
+/* Timeline Custom Styles */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #a855f7;
+  border: 4px solid #030008;
+  box-shadow: 0 0 8px #a855f7;
+  z-index: 10;
+}
