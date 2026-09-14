@@ -13,10 +13,9 @@ export default function Skills() {
         "LangGraph",
         "Prompt Engineering",
         "RAG",
-        "Vector Database",
-        "Gemini API",
-        "OCR"
-      ]
+        "Vector Databases",
+        "Gemini API"
+        ]
     },
     {
       category: "Backend Development",
@@ -24,9 +23,13 @@ export default function Skills() {
       skills: [
         "Node.js",
         "Express.js",
+        "Typescript",
         "REST APIs",
-        "JWT Authentication",
-        "Swagger"
+        "Authentication & Authorization",
+        "Caching",
+        "Swagger / OpenAPI",
+        "API Gateway",
+        "Docker"
       ]
     },
     {
@@ -36,13 +39,14 @@ export default function Skills() {
         "Python",
         "Java",
         "JavaScript",
-        "SQL"
-      ]
+        "TypeScript"
+            ]
     },
     {
       category: "Database",
       icon: <Database className="h-6 w-6 text-yellow-400" />,
       skills: [
+        "SQL",
         "MySQL",
         "SQL Server",
         "MS Access"

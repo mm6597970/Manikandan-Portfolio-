@@ -5,8 +5,8 @@ import { Trophy, Shield, GitBranch, Users, Zap } from 'lucide-react';
 export default function Achievements() {
   const achievementsList = [
     {
-      title: "Built Agentic AI Invoice Processing System",
-      description: "Successfully designed and deployed a workflow using LangGraph and Gemini for extracting invoice data, including validation and self-correction loops.",
+      title: "ECURE ENTERPRISE KNOWLEDGE AGENT",
+      description: "Architected a secure enterprise AI platform using RAG, SQL Agents, and Hybrid Retrieval to intelligently retrieve and generate responses from enterprise documents and structured databases.",
       icon: <CpuIcon className="h-6 w-6 text-cyber-purple" />
     },
     {
@@ -21,13 +21,8 @@ export default function Achievements() {
     },
     {
       title: "Project Leader for Customer Management System",
-      description: "Directed team coordination for building a secure, multi-role Customer Workflow management system with robust Role-Based Access Control.",
+      description: "Led project coordination and development of a role-based Customer Management System for managing customer requests and organizational workflows.",
       icon: <Users className="h-6 w-6 text-yellow-400" />
-    },
-    {
-      title: "Active DSA Learner",
-      description: "Continuously practicing and refining knowledge in complex data structures and algorithms, optimizing code complexity, and system design patterns.",
-      icon: <Zap className="h-6 w-6 text-emerald-400" />
     }
   ];
 
@@ -38,7 +33,7 @@ export default function Achievements() {
           Key Achievements
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {achievementsList.map((ach, index) => (
             <motion.div
               key={index}

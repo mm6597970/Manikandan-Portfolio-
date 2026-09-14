@@ -23,16 +23,16 @@ const Github = (props) => (
 export default function Projects() {
   const projectsList = [
     {
-      title: "Agentic AI Invoice Processor",
-      description: "An AI-powered invoice processing system using Gemini, LangChain, LangGraph, and OCR technologies. Features an advanced self-correction agent loop to self-correct parsed fields during schema validation.",
+      title: "Secure Enterprise Knowledge Agent",
+      description: "A secure enterprise AI knowledge platform utilizing RAG, SQL Agents, and Hybrid Retrieval to intelligently retrieve and generate responses from enterprise documents and structured databases.",
       features: [
-        "Invoice Data Extraction",
-        "OCR Document Processing",
-        "Valid JSON Schema Generation",
-        "Multi-stage Validation Workflow",
-        "Agentic Self-Correction Loop"
+        "RAG & Hybrid Retrieval",
+        "Multi-agent Orchestration",
+        "AI Guardrails & Prompt Protection",
+        "JWT Authentication & RBAC",
+        "Metadata Access Control & Logging"
       ],
-      techStack: ["Gemini", "LangChain", "LangGraph", "Python", "OCR"],
+      techStack: ["React.js", "Node.js", "FastAPI", "Gemini", "LangChain", "LangGraph", "ChromaDB", "MySQL"],
       category: "Artificial Intelligence",
       icon: <Cpu className="h-5 w-5 text-cyber-purple" />,
       github: "https://github.com/mm6597970",
@@ -105,7 +105,7 @@ export default function Projects() {
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-400 text-xs sm:text-sm mb-5 leading-relaxed text-justify h-20 overflow-y-auto pr-1">
+                <p className="text-gray-400 text-xs sm:text-sm mb-5 leading-relaxed text-justify">
                   {project.description}
                 </p>
 

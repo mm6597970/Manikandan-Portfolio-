@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, Download, Send, CheckCircle } from 'lucide-react';
+const email_gen_key = import.meta.env.VITE_EMAIL_GEN_ACCESS_KEY;
 
 const Github = (props) => (
   <svg
@@ -48,14 +49,40 @@ export default function Contact() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Simulate API submission
-    setTimeout(() => {
-      setIsSubmitted(true);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => setIsSubmitted(false), 5000);
-    }, 800);
+    
+    try {
+      // Sending email using Web3Forms API
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          // TODO: Get your free access key from https://web3forms.com/ and replace this string
+          access_key: email_gen_key,
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+      
+      if (result.success) {
+        setIsSubmitted(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setIsSubmitted(false), 5000);
+      } else {
+        alert("Failed to send message: " + result.message);
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("An error occurred while sending the message. Please try again later.");
+    }
   };
 
   const handleChange = (e) => {

@@ -7,17 +7,17 @@ export default function About() {
     {
       icon: <Cpu className="h-6 w-6 text-cyber-purple" />,
       title: "Agentic AI & LLMs",
-      description: "Building autonomous systems using LangChain, LangGraph, and Gemini APIs with advanced self-correction."
+      description: "Building AI agents and LLM-powered workflows using LangChain, LangGraph, and Gemini API with structured multi-agent orchestration."
     },
     {
       icon: <Terminal className="h-6 w-6 text-cyber-pink" />,
       title: "Backend Architectures",
-      description: "Developing robust APIs using Node.js, Express.js, and implementing scalable backend REST flows."
+      description: "Developing scalable REST APIs and backend services using Node.js, Express.js, Typescript , MySQL, and API Gateway."
     },
     {
       icon: <Layers className="h-6 w-6 text-cyber-blue" />,
       title: "RAG & Search",
-      description: "Implementing Retrieval-Augmented Generation workflows integrated with vector databases for contextual query retrieval."
+      description: "Building Retrieval-Augmented Generation systems using vector databases, hybrid retrieval, metadata filtering, and contextual search."
     }
   ];
 
@@ -40,13 +40,13 @@ export default function About() {
           >
             <div className="p-6 rounded-xl glass-panel border border-cyber-purple/20">
               <p className="mb-4">
-                I am an <strong className="text-cyber-purple font-semibold">AI Engineer and Backend Developer</strong> passionate about building intelligent applications powered by Large Language Models (LLMs), Agentic AI, and modern backend technologies. My expertise includes developing AI-powered document processing systems, RAG applications, workflow automation, and scalable REST APIs.
+                I am an <strong className="text-cyber-purple font-semibold"> AI Engineer and Backend Developer </strong>passionate about building intelligent applications by integrating LLMs, RAG, Agentic AI, and modern backend technologies. I enjoy combining AI capabilities with robust backend architectures to solve real-world problems.
               </p>
               <p className="mb-4">
-                I have hands-on experience with <strong className="text-cyber-pink font-semibold">LangChain, LangGraph, Gemini API, OCR technologies, Node.js, Express.js, MySQL, AWS Lambda, and API Gateway</strong>. I enjoy solving real-world business problems by combining AI capabilities with robust backend architectures.
+                I have hands-on experience with <strong className="text-cyber-pink font-semibold">Gemini API, LangChain, LangGraph, RAG, Node.js, Express.js, Typescript, MySQL, REST APIs, Docker and API Gateway</strong> . My work includes building AI-powered knowledge systems, document-processing workflows, and scalable backend applications with authentication, access control, and API integrations.
               </p>
               <p>
-                Currently, I focus on <strong className="text-cyber-blue font-semibold">Agentic AI, Retrieval-Augmented Generation (RAG), AI Automation, Cloud Deployment, and Backend Engineering</strong> while continuously improving my skills in AI Engineering and Distributed Systems.
+                Currently, I am focused on <strong className="text-cyber-blue font-semibold"> Agentic AI, Retrieval-Augmented Generation (RAG), AI automation, backend engineering, cloud deployment, and scalable system design.</strong> I am continuously strengthening my skills in AI engineering, distributed systems, databases, caching, and production-ready backend architectures.
               </p>
             </div>
           </motion.div>

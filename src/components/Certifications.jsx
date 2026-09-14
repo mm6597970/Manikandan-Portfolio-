@@ -27,14 +27,6 @@ export default function Certifications() {
       credentialId: "Oracle-Java",
       color: "border-red-500/20 hover:border-red-500/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.15)]",
       badgeColor: "text-red-400 bg-red-950/40"
-    },
-    {
-      title: "Cisco Network Basics",
-      issuer: "Cisco Networking Academy",
-      date: "Certified",
-      credentialId: "Cisco-Network",
-      color: "border-blue-500/20 hover:border-blue-500/50 hover:shadow-[0_0_15px_rgba(59,130,246,0.15)]",
-      badgeColor: "text-blue-400 bg-blue-950/40"
     }
   ];
 
