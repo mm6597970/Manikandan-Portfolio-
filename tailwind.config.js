@@ -9,14 +9,14 @@ export default {
     extend: {
       colors: {
         cyber: {
-          black: '#030008',
-          navy: '#050515',
-          darker: '#0a0a1f',
-          dark: '#120e2e',
-          card: 'rgba(10, 6, 22, 0.65)',
-          purple: '#a855f7',
-          pink: '#d946ef',
-          blue: '#3b82f6',
+          black: '#ffffff',
+          navy: '#f0f4ff',
+          darker: '#e0e7ff',
+          dark: '#c7d2fe',
+          card: 'rgba(255, 255, 255, 0.7)',
+          purple: '#3b82f6', // Use the bright blue for accents
+          pink: '#2563eb',   // Darker blue for secondary accents
+          blue: '#1d4ed8',   // Even darker blue
         }
       },
       animation: {

@@ -12,7 +12,7 @@ import Contact from './components/Contact';
 
 export default function App() {
   return (
-    <div className="relative min-h-screen text-gray-100 selection:bg-cyber-purple selection:text-white">
+    <div className="relative min-h-screen text-gray-900 selection:bg-cyber-purple selection:text-gray-900">
       {/* Navigation Header */}
       <Navbar />
 

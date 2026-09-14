@@ -53,13 +53,13 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-cyber-black/70 backdrop-blur-md border-b border-cyber-purple/10">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-md border-b border-cyber-purple/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo / Title */}
           <div className="flex items-center gap-2 cursor-pointer group" onClick={(e) => handleClick(e, 'home')}>
             <Terminal className="h-6 w-6 text-cyber-purple group-hover:text-cyber-pink transition-colors duration-300" />
-            <span className="font-mono text-xl font-bold bg-gradient-to-r from-white via-cyber-purple to-cyber-pink bg-clip-text text-transparent group-hover:neon-glow-text transition-all duration-300">
+            <span className="font-mono text-xl font-bold bg-gradient-to-r from-cyber-blue via-cyber-purple to-cyber-pink bg-clip-text text-transparent group-hover:neon-glow-text transition-all duration-300">
               Manikandan K
             </span>
           </div>
@@ -74,7 +74,7 @@ export default function Navbar() {
                 className={`px-4 py-2 rounded-md font-mono text-sm tracking-wider transition-all duration-300 relative ${
                   activeSection === item.id
                     ? 'text-cyber-purple font-semibold'
-                    : 'text-gray-400 hover:text-white'
+                    : 'text-gray-600 hover:text-gray-900'
                 }`}
               >
                 {item.label}
@@ -89,7 +89,7 @@ export default function Navbar() {
           <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-gray-400 hover:text-white focus:outline-none hover:bg-cyber-purple/10 transition-colors"
+              className="p-2 rounded-md text-gray-600 hover:text-gray-900 focus:outline-none hover:bg-cyber-purple/10 transition-colors"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -99,7 +99,7 @@ export default function Navbar() {
 
       {/* Mobile Nav Menu */}
       {isOpen && (
-        <div className="lg:hidden bg-cyber-black/95 border-b border-cyber-purple/20 px-2 pt-2 pb-4 space-y-1">
+        <div className="lg:hidden bg-white/90 border-b border-cyber-purple/20 px-2 pt-2 pb-4 space-y-1">
           {navItems.map((item) => (
             <a
               key={item.id}
@@ -108,7 +108,7 @@ export default function Navbar() {
               className={`block px-4 py-3 rounded-md font-mono text-base ${
                 activeSection === item.id
                   ? 'bg-cyber-purple/10 text-cyber-purple border-l-4 border-cyber-purple'
-                  : 'text-gray-400 hover:bg-cyber-purple/5 hover:text-white'
+                  : 'text-gray-600 hover:bg-cyber-purple/5 hover:text-gray-900'
               } transition-all duration-200`}
             >
               {item.label}

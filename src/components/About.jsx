@@ -36,7 +36,7 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7 }}
-            className="lg:col-span-7 space-y-6 text-gray-300 font-sans text-base sm:text-lg leading-relaxed text-justify"
+            className="lg:col-span-7 space-y-6 text-gray-700 font-sans text-base sm:text-lg leading-relaxed text-justify"
           >
             <div className="p-6 rounded-xl glass-panel border border-cyber-purple/20">
               <p className="mb-4">
@@ -64,13 +64,13 @@ export default function About() {
                 key={idx} 
                 className="p-5 rounded-xl glass-panel flex flex-col items-start text-left hover:scale-[1.03] transition-all duration-300"
               >
-                <div className="p-3 bg-cyber-black/80 rounded-lg border border-cyber-purple/20 mb-4">
+                <div className="p-3 bg-transparent rounded-lg border border-cyber-purple/20 mb-4">
                   {card.icon}
                 </div>
-                <h3 className="font-mono text-sm sm:text-base font-bold text-white mb-2 uppercase tracking-wide">
+                <h3 className="font-mono text-sm sm:text-base font-bold text-gray-900 mb-2 uppercase tracking-wide">
                   {card.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                   {card.description}
                 </p>
               </div>

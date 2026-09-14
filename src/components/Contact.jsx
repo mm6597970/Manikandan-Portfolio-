@@ -91,7 +91,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 relative overflow-hidden bg-cyber-navy/10">
+    <section id="contact" className="py-24 relative overflow-hidden bg-transparent">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="section-heading-glow">
           Contact Me
@@ -108,10 +108,10 @@ export default function Contact() {
           >
             <div className="glass-panel-glow rounded-xl p-8 flex flex-col justify-between h-full relative overflow-hidden">
               <div>
-                <h3 className="font-mono text-lg font-bold text-white mb-6 uppercase tracking-wider">
+                <h3 className="font-mono text-lg font-bold text-gray-900 mb-6 uppercase tracking-wider">
                   Contact Information
                 </h3>
-                <p className="text-gray-400 text-sm mb-8 leading-relaxed">
+                <p className="text-gray-600 text-sm mb-8 leading-relaxed">
                   Feel free to reach out for project proposals, collaboration, job opportunities, or just to say hello. I'll get back to you as soon as possible!
                 </p>
 
@@ -123,7 +123,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <div className="text-[10px] text-gray-500 uppercase">Phone</div>
-                      <div className="text-white group-hover:text-cyber-purple transition-colors">+91-8248172014</div>
+                      <div className="text-gray-900 group-hover:text-cyber-purple transition-colors">+91-8248172014</div>
                     </div>
                   </a>
 
@@ -134,7 +134,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <div className="text-[10px] text-gray-500 uppercase">Email</div>
-                      <div className="text-white group-hover:text-cyber-pink transition-colors">manikandan250720@gmail.com</div>
+                      <div className="text-gray-900 group-hover:text-cyber-pink transition-colors">manikandan250720@gmail.com</div>
                     </div>
                   </a>
 
@@ -145,7 +145,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <div className="text-[10px] text-gray-500 uppercase">LinkedIn</div>
-                      <div className="text-white group-hover:text-cyber-blue transition-colors">linkedin.com/in/manikandan-k</div>
+                      <div className="text-gray-900 group-hover:text-cyber-blue transition-colors">linkedin.com/in/manikandan-k</div>
                     </div>
                   </a>
 
@@ -156,7 +156,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <div className="text-[10px] text-gray-500 uppercase">GitHub</div>
-                      <div className="text-white group-hover:text-cyber-purple transition-colors">github.com/mm6597970</div>
+                      <div className="text-gray-900 group-hover:text-cyber-purple transition-colors">github.com/mm6597970</div>
                     </div>
                   </a>
                 </div>
@@ -167,7 +167,7 @@ export default function Contact() {
                 <a
                   href="/resume/resume.pdf"
                   download="Manikandan_K_Resume.pdf"
-                  className="flex items-center justify-center gap-2 w-full py-3.5 rounded-lg font-mono text-sm tracking-wider font-semibold border border-cyber-purple/40 text-white hover:bg-cyber-purple/10 hover:border-cyber-purple transition-all duration-300"
+                  className="flex items-center justify-center gap-2 w-full py-3.5 rounded-lg font-mono text-sm tracking-wider font-semibold border border-cyber-purple/40 text-gray-900 hover:bg-cyber-purple/10 hover:border-cyber-purple transition-all duration-300"
                 >
                   <Download className="h-4 w-4 text-cyber-purple" />
                   <span>DOWNLOAD RESUME</span>
@@ -186,7 +186,7 @@ export default function Contact() {
           >
             <div className="glass-panel rounded-xl p-8 h-full flex flex-col justify-between">
               <div>
-                <h3 className="font-mono text-lg font-bold text-white mb-6 uppercase tracking-wider">
+                <h3 className="font-mono text-lg font-bold text-gray-900 mb-6 uppercase tracking-wider">
                   Send A Message
                 </h3>
 
@@ -194,26 +194,26 @@ export default function Contact() {
                   {/* Grid for Name & Email */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div className="relative group">
-                      <label className="block font-mono text-[10px] text-gray-400 uppercase mb-2">Name</label>
+                      <label className="block font-mono text-[10px] text-gray-600 uppercase mb-2">Name</label>
                       <input
                         type="text"
                         name="name"
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full bg-cyber-black/70 border border-cyber-purple/20 focus:border-cyber-purple rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-cyber-purple transition-all duration-300"
+                        className="w-full bg-transparent border border-cyber-purple/20 focus:border-cyber-purple rounded-lg px-4 py-3 text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-cyber-purple transition-all duration-300"
                         placeholder="Steve Jobs"
                       />
                     </div>
                     <div className="relative group">
-                      <label className="block font-mono text-[10px] text-gray-400 uppercase mb-2">Email</label>
+                      <label className="block font-mono text-[10px] text-gray-600 uppercase mb-2">Email</label>
                       <input
                         type="email"
                         name="email"
                         required
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full bg-cyber-black/70 border border-cyber-purple/20 focus:border-cyber-purple rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-cyber-purple transition-all duration-300"
+                        className="w-full bg-transparent border border-cyber-purple/20 focus:border-cyber-purple rounded-lg px-4 py-3 text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-cyber-purple transition-all duration-300"
                         placeholder="steve@example.com"
                       />
                     </div>
@@ -221,28 +221,28 @@ export default function Contact() {
 
                   {/* Subject */}
                   <div>
-                    <label className="block font-mono text-[10px] text-gray-400 uppercase mb-2">Subject</label>
+                    <label className="block font-mono text-[10px] text-gray-600 uppercase mb-2">Subject</label>
                     <input
                       type="text"
                       name="subject"
                       required
                       value={formData.subject}
                       onChange={handleChange}
-                      className="w-full bg-cyber-black/70 border border-cyber-purple/20 focus:border-cyber-purple rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-cyber-purple transition-all duration-300"
+                      className="w-full bg-transparent border border-cyber-purple/20 focus:border-cyber-purple rounded-lg px-4 py-3 text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-cyber-purple transition-all duration-300"
                       placeholder="Collaboration inquiry"
                     />
                   </div>
 
                   {/* Message */}
                   <div>
-                    <label className="block font-mono text-[10px] text-gray-400 uppercase mb-2">Message</label>
+                    <label className="block font-mono text-[10px] text-gray-600 uppercase mb-2">Message</label>
                     <textarea
                       name="message"
                       required
                       rows="5"
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full bg-cyber-black/70 border border-cyber-purple/20 focus:border-cyber-purple rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-cyber-purple transition-all duration-300 resize-none"
+                      className="w-full bg-transparent border border-cyber-purple/20 focus:border-cyber-purple rounded-lg px-4 py-3 text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-cyber-purple transition-all duration-300 resize-none"
                       placeholder="Hi Manikandan, I'd like to talk about..."
                     />
                   </div>

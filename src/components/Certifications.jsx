@@ -9,29 +9,29 @@ export default function Certifications() {
       issuer: "Microsoft",
       date: "Certified",
       credentialId: "AZ-900",
-      color: "border-cyan-500/20 hover:border-cyan-500/50 hover:shadow-[0_0_15px_rgba(6,182,212,0.15)]",
-      badgeColor: "text-cyan-400 bg-cyan-950/40"
+      color: "border-cyan-500/30 hover:border-cyan-500/60 hover:shadow-[0_0_15px_rgba(6,182,212,0.2)]",
+      badgeColor: "text-cyan-600 bg-cyan-100"
     },
     {
       title: "NPTEL Introduction to Machine Learning",
       issuer: "NPTEL / IIT",
       date: "Certified",
       credentialId: "NPTEL-ML",
-      color: "border-purple-500/20 hover:border-purple-500/50 hover:shadow-[0_0_15px_rgba(168,85,247,0.15)]",
-      badgeColor: "text-purple-400 bg-purple-950/40"
+      color: "border-purple-500/30 hover:border-purple-500/60 hover:shadow-[0_0_15px_rgba(168,85,247,0.2)]",
+      badgeColor: "text-purple-600 bg-purple-100"
     },
     {
       title: "Oracle Java Fundamentals",
       issuer: "Oracle Corporation",
       date: "Certified",
       credentialId: "Oracle-Java",
-      color: "border-red-500/20 hover:border-red-500/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.15)]",
-      badgeColor: "text-red-400 bg-red-950/40"
+      color: "border-red-500/30 hover:border-red-500/60 hover:shadow-[0_0_15px_rgba(239,68,68,0.2)]",
+      badgeColor: "text-red-600 bg-red-100"
     }
   ];
 
   return (
-    <section id="certifications" className="py-24 relative overflow-hidden bg-cyber-navy/10">
+    <section id="certifications" className="py-24 relative overflow-hidden bg-transparent">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="section-heading-glow">
           Certifications
@@ -48,14 +48,14 @@ export default function Certifications() {
               className={`glass-panel rounded-xl p-6 flex flex-col justify-between transition-all duration-300 ${cert.color} group`}
             >
               <div className="flex items-start gap-4">
-                <div className={`p-3 rounded-lg border border-white/5 flex items-center justify-center shrink-0 ${cert.badgeColor}`}>
+                <div className={`p-3 rounded-lg border border-black/5 flex items-center justify-center shrink-0 ${cert.badgeColor}`}>
                   <Award className="h-6 w-6" />
                 </div>
                 <div>
-                  <h3 className="font-mono text-sm sm:text-base font-bold text-white uppercase tracking-wide group-hover:text-white transition-colors">
+                  <h3 className="font-mono text-sm sm:text-base font-bold text-gray-900 uppercase tracking-wide group-hover:text-gray-900 transition-colors">
                     {cert.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-gray-400 mt-1 font-mono">
+                  <p className="text-xs sm:text-sm text-gray-600 mt-1 font-mono">
                     Issuer: {cert.issuer}
                   </p>
                 </div>

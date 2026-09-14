@@ -72,7 +72,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-24 relative overflow-hidden bg-cyber-navy/10">
+    <section id="projects" className="py-24 relative overflow-hidden bg-transparent">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="section-heading-glow">
           Featured Projects
@@ -94,29 +94,29 @@ export default function Projects() {
                   <span className="font-mono text-[10px] sm:text-xs text-cyber-purple tracking-widest uppercase">
                     {project.category}
                   </span>
-                  <div className="p-1.5 bg-cyber-black rounded-lg border border-cyber-purple/20">
+                  <div className="p-1.5 bg-transparent rounded-lg border border-cyber-purple/20">
                     {project.icon}
                   </div>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-cyber-purple transition-colors duration-300 uppercase tracking-wide font-mono">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 group-hover:text-cyber-purple transition-colors duration-300 uppercase tracking-wide font-mono">
                   {project.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-400 text-xs sm:text-sm mb-5 leading-relaxed text-justify">
+                <p className="text-gray-600 text-xs sm:text-sm mb-5 leading-relaxed text-justify">
                   {project.description}
                 </p>
 
                 {/* Features */}
                 <div className="mb-6">
-                  <h4 className="font-mono text-[10px] sm:text-xs font-semibold text-white mb-2 tracking-wide uppercase">
+                  <h4 className="font-mono text-[10px] sm:text-xs font-semibold text-gray-900 mb-2 tracking-wide uppercase">
                     Key Features
                   </h4>
                   <ul className="space-y-1.5">
                     {project.features.map((feat, fIdx) => (
-                      <li key={fIdx} className="flex items-center gap-2 text-[11px] sm:text-xs text-gray-400">
+                      <li key={fIdx} className="flex items-center gap-2 text-[11px] sm:text-xs text-gray-600">
                         <span className="w-1.5 h-1.5 rounded-full bg-cyber-pink" />
                         <span>{feat}</span>
                       </li>
@@ -144,14 +144,14 @@ export default function Projects() {
                     href={project.github} 
                     target="_blank" 
                     rel="noreferrer"
-                    className="flex items-center gap-1.5 font-mono text-xs text-gray-400 hover:text-white transition-colors"
+                    className="flex items-center gap-1.5 font-mono text-xs text-gray-600 hover:text-gray-900 transition-colors"
                   >
                     <Github className="h-4 w-4" />
                     <span>SOURCE_CODE</span>
                   </a>
                   <a 
                     href={project.demo}
-                    className="flex items-center gap-1.5 font-mono text-xs text-gray-400 hover:text-cyber-purple transition-colors"
+                    className="flex items-center gap-1.5 font-mono text-xs text-gray-600 hover:text-cyber-purple transition-colors"
                   >
                     <span>LIVE_DEMO</span>
                     <ExternalLink className="h-3.5 w-3.5" />

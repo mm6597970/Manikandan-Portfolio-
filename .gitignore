@@ -23,3 +23,10 @@ node_modules/
 *.njsproj
 *.sln
 *.sw?
+
+# Sensitive data
+.env.*
+*.pem
+*.key
+*.cert
+secrets.json

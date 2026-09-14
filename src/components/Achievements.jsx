@@ -27,7 +27,7 @@ export default function Achievements() {
   ];
 
   return (
-    <section id="achievements" className="py-24 relative overflow-hidden bg-cyber-black">
+    <section id="achievements" className="py-24 relative overflow-hidden bg-transparent">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="section-heading-glow">
           Key Achievements
@@ -45,15 +45,15 @@ export default function Achievements() {
             >
               <div>
                 <div className="flex items-center justify-between mb-4 pb-3 border-b border-cyber-purple/10">
-                  <div className="p-2 bg-cyber-black/80 rounded-lg border border-cyber-purple/20">
+                  <div className="p-2 bg-transparent rounded-lg border border-cyber-purple/20">
                     {ach.icon}
                   </div>
                   <Trophy className="h-5 w-5 text-cyber-purple opacity-40" />
                 </div>
-                <h3 className="font-mono text-sm sm:text-base font-bold text-white mb-3 uppercase tracking-wide">
+                <h3 className="font-mono text-sm sm:text-base font-bold text-gray-900 mb-3 uppercase tracking-wide">
                   {ach.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-gray-400 leading-relaxed text-justify">
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed text-justify">
                   {ach.description}
                 </p>
               </div>

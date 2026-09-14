@@ -17,7 +17,7 @@ export default function Education() {
   };
 
   return (
-    <section id="education" className="py-24 relative overflow-hidden bg-cyber-navy/20">
+    <section id="education" className="py-24 relative overflow-hidden bg-transparent">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="section-heading-glow">
           Education
@@ -39,7 +39,7 @@ export default function Education() {
                     <GraduationCap className="h-6 w-6" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-white font-mono uppercase tracking-wide">
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 font-mono uppercase tracking-wide">
                       {eduData.institution}
                     </h3>
                     <p className="text-sm sm:text-base text-cyber-purple font-semibold">
@@ -50,7 +50,7 @@ export default function Education() {
               </div>
 
               {/* Info details */}
-              <div className="flex flex-wrap gap-4 mb-6 text-sm text-gray-400 font-mono">
+              <div className="flex flex-wrap gap-4 mb-6 text-sm text-gray-600 font-mono">
                 <div className="flex items-center gap-1.5">
                   <MapPin className="h-4 w-4 text-cyber-pink" />
                   <span>{eduData.location}</span>
@@ -63,13 +63,13 @@ export default function Education() {
 
               {/* Highlighting academic focus */}
               <div className="border-t border-cyber-purple/10 pt-4 mt-4">
-                <div className="flex items-center gap-2 mb-3 text-white font-mono text-sm font-semibold">
+                <div className="flex items-center gap-2 mb-3 text-gray-900 font-mono text-sm font-semibold">
                   <Award className="h-4 w-4 text-cyber-pink" />
                   <span>CORE HIGHLIGHTS</span>
                 </div>
                 <ul className="space-y-2">
                   {eduData.highlights.map((highlight, index) => (
-                    <li key={index} className="flex items-start gap-2 text-sm text-gray-400">
+                    <li key={index} className="flex items-start gap-2 text-sm text-gray-600">
                       <span className="text-cyber-purple mt-1.5 select-none text-[8px]">■</span>
                       <span>{highlight}</span>
                     </li>
